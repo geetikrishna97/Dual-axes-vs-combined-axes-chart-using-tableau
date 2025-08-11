@@ -1,0 +1,87 @@
+.....Various kind of charts in tableau- Bar chart, combined axes ,dual axes chart.
+
+.....Visualize data in tabular format
+
+sheet1
+Bar chart for various discrete dimension
+
+Drag sales(continuous field) to column.
+Drag category and sub category to rows.
+
+- Category/Sub-Category in Rows: These become vertical axis labels.
+- SUM(Sales) in Columns: This becomes the horizontal axis, showing the length of each bar.
+- Tableau defaults to bar charts when we have discrete dimensions on rows and aggregated measures on columns.
+
+Mark by color of profit and in filter section drag profit for extra addition to chart.
+
+sheet2
+Drill-Down in Time Series
+
+In Tableau, the drill-down feature for time series allows you to explore data across different levels of time granularity—such as year → quarter → month → day—with just a few clicks. It’s a powerful way to uncover trends, seasonality, and detailed insights over time.
+
+Drag order date to column ,right click and change it to discrete month. Later we can drill down to day in sheet 3 to get the spike performance.
+
+Drag sales to row. graph will be plotted.
+
+sheet3
+spike chart to get the extreme lowest and highest point
+
+sheet4
+When we bring discrete and measure field on rows and columns ,tableau by default plot a bar or line chart.
+Suppose our requirement is to get the data in a tabular format. For that, we can place the measure field on marks card and discrete dimension on rows and columns as per requirement.
+
+Drag segment on columns
+Drag region on rows
+Place sales on marks card , it will display the result in tabular format 
+
+sheet5
+Two measure field values to be shown in a tabular format
+
+Measure names in the columns which will act as a container to categorically filter the measure values.
+Subcategory in the rows.
+Measure values in the marks card and filter as per requirement.
+
+Sheet8 & 9
+
+Combined axes chart
+
+Suppose we want to plot a graph between order date (continuous field) wrt measure profit, sales, quantity. If we dragged month(order date) in row and profit, sales , quantity in column field then it will plot graph having three different axes. so, if we want to plot two or more than two  different measures on the same graph then we can use the concept combined axes chart. Here, concept of measure value and measure names also come into place.
+
+steps-
+
+Drag order date to column and change it to month(order date) continuous -green pill by right clicking on it.
+
+Drag measure values field to row and measure names field to mark by color and drag the measure names field to filter and categorically filter out the unwanted measures. For shee8 graph keep only profit , sales , quantity. For sheet9 graph keep only profit , sales.
+
+sheet12
+Dual axes chart- Here we'll get different marks card for different measure unlike in combined axes chart we have one mask card for all the measures.
+
+  Add first measure
+- Drag a dimension month(Order Date) to the Columns shelf.
+- Drag  first measure Sales to the Rows shelf.
+- Tableau will create a basic chart—usually a line or bar.
+
+  Add the Second Measure
+- Drag the second measure  Profit to the Rows shelf.
+- Tableau will create a second axis and a second chart.
+
+  Combine the Axes
+- Right-click on the second axis Profit and select Dual Axis.
+- This overlays both charts on the same X-axis.
+- Right click on the secondary axis (axes of profit) and select synchronize axes.
+  
+  Customize Mark Types
+- On the Marks card, now see separate cards for each measure.
+- Change one to Bar and the other to Line.
+
+  Edit colors
+- Edit colors for profit and sales.
+
+Sheet13 & 14
+Plotting different charts using dual axes
+
+For sales use bar chart and sales (2) use mark by shape (star/arrow) to get a star/arrow shaped dual axes chart.
+
+ 
+
+ 
